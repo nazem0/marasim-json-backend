@@ -1,0 +1,284 @@
+{
+    "User": [
+      {
+        "id": 1, 
+        "name": "John Doe",
+        "phone": "123-456-7890",
+        "email": "john@example.com",
+        "password": "password123",
+        "photo": "https://example.com/john.jpg",
+        "gender": "male",
+        "role": "user",
+        "nationalID": "123-45-6789"
+      },
+      {
+        "id": 2,
+        "name": "Jane Doe",
+        "phone": "098-765-4321",  
+        "email": "jane@example.com",
+        "password": "password456",
+        "photo": "https://example.com/jane.jpg",
+        "gender": "female",
+        "role": "user",
+        "nationalID": "987-65-4321"
+      }
+    ],
+  
+    "Vendor": [
+      {
+        "id": 1,
+        "userId": 1,
+        "categoryId": 1,
+        "summary": "Best bakery in town",
+        "location": {
+          "lat": 43.123,
+          "lng": -79.456  
+        }
+      },
+      {
+        "id": 2,
+        "userId": 2,
+        "categoryId": 2,
+        "summary": "Affordable plumber",
+        "location": {
+          "lat": 43.789,
+          "lng": -79.101
+        }
+      }
+    ],
+  
+    "Category": [
+      {
+        "id": 1,
+        "name": "Bakery",
+        "photo": "https://example.com/bakery.jpg"
+      },
+      {
+        "id": 2, 
+        "name": "Plumbing",
+        "photo": "https://example.com/plumbing.jpg"
+      }
+    ],
+  
+    "Review": [
+      {
+        "id": 1,
+        "userId": 1,
+        "serviceId": 1,
+        "rate": 5,
+        "message": "Delicious cakes!",
+        "dateTime": "2023-02-14T09:15:27.245Z"
+      },
+      {
+        "id": 2,
+        "userId": 2, 
+        "serviceId": 2,
+        "rate": 4,
+        "message": "Fast affordable service",
+        "dateTime": "2023-02-15T12:47:11.135Z"
+      }
+    ],
+  
+    "Service": [
+      {
+        "id": 1,
+        "vendorId": 1,
+        "title": "Bakery and Cakes",
+        "description": "We make custom cakes for all occasions",
+        "price": 50 ,
+        "street":"Random street for service 1",
+        "district":"Random district for service 1",
+        "governance":"Random governance for service 1"
+      },
+      {
+        "id": 2,
+        "vendorId": 2,
+        "title": "Plumbing Services",
+        "description": "Experienced plumbers for any job",
+        "price": 80,
+        "street":"Random street for service 2",
+        "district":"Random district for service 2",
+        "governance":"Random governance for service 2"
+      }
+    ],
+  
+    "ServiceAttachment": [
+      {
+        "id": 1,
+        "serviceId": 1,
+        "resource": "https://example.com/cake.jpg"
+      },
+      {
+        "id": 2,
+        "serviceId": 2,
+        "resource": "https://example.com/plumbing.pdf"
+      }
+    ],
+  
+    "Discount": [
+      {
+        "id": 1,
+        "serviceId": 1,
+        "code": "CAKE10",
+        "discount": 10  
+      },
+      {
+        "id": 2,
+        "serviceId": 2,
+        "code": "PIPE20",
+        "discount": 20
+      }
+    ],
+  
+    "BookingDetails": [
+      {
+        "id": 1,
+        "bookingId": 1,
+        "serviceId": 1,
+        "code": "CAKE10",
+        "status": "confirmed",
+        "paymentStatus": "paid"
+      },
+      {
+        "id": 2,
+        "bookingId": 2,
+        "serviceId": 2,
+        "code": null,
+        "status": "pending",
+        "paymentStatus": "unpaid"  
+      }
+    ],
+  
+    "Booking": [
+      {
+        "id": 1,
+        "userId": 1,
+        "totalPrice": 45, 
+        "date": "2023-03-14",
+        "location": "123 Main St"
+      },
+      {
+        "id": 2,
+        "userId": 2,
+        "totalPrice": 80,
+        "date": "2023-03-15",
+        "location": "456 Oak Rd"
+      }
+    ],
+  
+    "Post": [
+      {
+        "id": 1,
+        "vendorId": 1,
+        "title": "New Cake Flavors!",
+        "description": "Come try our new cake flavors this week!",
+        "date": "2023-02-14",
+        "serviceId": 1
+      },
+      {
+        "id": 2,
+        "vendorId": 2,
+        "title": "Spring Specials",
+        "description": "15% off plumbing services this spring!",
+        "date": "2023-03-21",
+        "serviceId": 2
+      }
+    ],
+  
+    "PostAttachment": [
+      {
+        "id": 1,
+        "postId": 1,
+        "attachmentUrl": "https://example.com/new-cake.jpg"
+      },
+      {
+        "id": 2,
+        "postId": 2,
+        "attachmentUrl": "https://example.com/spring-sale.pdf"
+      }
+    ],
+  
+    "React": [
+      {
+        "id": 1,
+        "userId": 1,
+        "postId": 1,
+        "value": 1,
+        "date": "2023-02-14T13:25:11Z"
+      },
+      {  
+        "id": 2,
+        "userId": 2,
+        "postId": 2,
+        "value": 1,
+        "date": "2023-03-21T08:15:49Z"
+      }
+    ],
+    
+    "Follow": [
+      {
+        "id": 1,
+        "userId": 1,
+        "vendorId": 2,
+        "date": "2023-02-28"
+      },
+      {
+        "id": 2,
+        "userId": 2,
+        "vendorId": 1,
+        "date": "2023-03-05" 
+      }
+    ],
+  
+    "Comment": [
+      {
+        "id": 1,
+        "userId": 1,
+        "postId": 1,
+        "text": "Yum, can't wait to try!",
+        "date": "2023-02-14T14:20:11Z"
+      },
+      {
+        "id": 2,
+        "userId": 2, 
+        "postId": 2,
+        "text": "Thanks for the spring specials!",
+        "date": "2023-03-21T09:25:33Z"
+      }
+    ],
+  
+    "WeddingInvitaion": [
+      {
+        "id": 1,
+        "userId": 1,
+        "description": "Please join us for our wedding celebration!",
+        "brideName": "Jane",
+        "groomName": "John",
+        "date": "2023-06-14"
+      }
+    ],
+  
+    "CheckListItem": [
+      {
+        "id": 1,
+        "checklistId": 1,
+        "text": "Book venue",
+        "status": false
+      },
+      {
+        "id": 2,
+        "checklistId": 1,
+        "text": "Order cake",
+        "status": true
+      }
+    ],
+  
+    "CheckList": [
+      {
+        "id": 1,
+        "userId": 1,
+        "weddingDate": "2023-06-14"
+      }
+    ]
+  
+  }
