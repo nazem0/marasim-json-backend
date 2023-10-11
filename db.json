@@ -49,16 +49,6 @@
     "Vendor": [
       {
         "id": 1,
-        "userId": 1,
-        "categoryId": 1,
-        "summary": "Best wedding cakes in town",
-        "location": {
-          "lat": 43.123,
-          "lng": -79.456
-        }
-      },
-      {
-        "id": 2,
         "userId": 3,
         "categoryId": 3,
         "summary": "Professional wedding photography services",
@@ -68,7 +58,7 @@
         }
       },
       {
-        "id": 3,
+        "id": 2,
         "userId": 4,
         "categoryId": 4,
         "summary": "Elegant wedding hall for your special day",
