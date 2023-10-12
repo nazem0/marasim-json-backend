@@ -1,346 +1,350 @@
 {
-    "User": [
-      {
-        "id": 1,
-        "name": "John Doe",
-        "phone": "123-456-7890",
-        "email": "john@example.com",
-        "password": "password123",
-        "photo": "https://picsum.photos/400/400",
-        "gender": "male",
-        "role": "user",
-        "nationalID": "123-45-6789"
-      },
-      {
-        "id": 2,
-        "name": "Jane Doe",
-        "phone": "098-765-4321",
-        "email": "jane@example.com",
-        "password": "password456",
-        "photo": "https://picsum.photos/410/410",
-        "gender": "female",
-        "role": "user",
-        "nationalID": "987-65-4321"
-      },
-      {
-        "id": 3,
-        "name": "Photographer Joe",
-        "phone": "555-123-4567",
-        "email": "joe@example.com",
-        "password": "photographer123",
-        "photo": "https://picsum.photos/420/420",
-        "gender": "male",
-        "role": "photographer",
-        "nationalID": "555-12-3456"
-      },
-      {
-        "id": 4,
-        "name": "Hall Owner Mary",
-        "phone": "777-987-6543",
-        "email": "mary@example.com",
-        "password": "hallowner123",
-        "photo": "https://picsum.photos/400/450",
-        "gender": "female",
-        "role": "hallowner",
-        "nationalID": "777-98-7654"
-      }
-    ],
-  
-    "Vendor": [
-      {
-        "id": 1,
-        "userId": 3,
-        "categoryId": 3,
-        "summary": "Professional wedding photography services",
-        "location": {
-          "lat": 43.789,
-          "lng": -79.101
+    "users": [
+        {
+            "id": 1,
+            "name": "محمد علي",
+            "phone": "123-456-7890",
+            "email": "mohammad@example.com",
+            "password": "كلمةمرور123",
+            "photo": "https://picsum.photos/400/400",
+            "gender": "ذكر",
+            "role": "customer",
+            "nationalId": "123-45-6789"
+        },
+        {
+            "id": 2,
+            "name": "فاطمة علي",
+            "phone": "098-765-4321",
+            "email": "fatima@example.com",
+            "password": "كلمةمرور456",
+            "photo": "https://picsum.photos/410/410",
+            "gender": "أنثى",
+            "role": "customer",
+            "nationalId": "987-65-4321"
+        },
+        {
+            "id": 3,
+            "name": "علي المصور",
+            "phone": "555-123-4567",
+            "email": "ali@example.com",
+            "password": "مصور123",
+            "photo": "https://picsum.photos/420/420",
+            "gender": "ذكر",
+            "role": "vendor",
+            "nationalId": "555-12-3456"
+        },
+        {
+            "id": 4,
+            "name": "فاطمة صاحبة القاعة",
+            "phone": "777-987-6543",
+            "email": "fatimaq@example.com",
+            "password": "صاحبةقاعة123",
+            "photo": "https://picsum.photos/400/450",
+            "gender": "أنثى",
+            "role": "vendor",
+            "nationalId": "777-98-7654"
+        },
+        {
+            "id": 5,
+            "name": "أحمد علي",
+            "phone": "135-246-3579",
+            "email": "ahmad@example.com",
+            "password": "كلمةمرور246",
+            "photo": "https://picsum.photos/450/450",
+            "gender": "ذكر",
+            "role": "customer",
+            "nationalId": "135-24-3579"
         }
-      },
-      {
-        "id": 2,
-        "userId": 4,
-        "categoryId": 4,
-        "summary": "Elegant wedding hall for your special day",
-        "location": {
-          "lat": 42.567,
-          "lng": -78.987
+    ],
+    "vendors": [
+        {
+            "id": 1,
+            "userId": 3,
+            "categoryId": 3,
+            "summary": "خدمات تصوير أعراس احترافية",
+            "location": {
+                "lat": 43.789,
+                "lng": -79.101
+            }
+        },
+        {
+            "id": 2,
+            "userId": 4,
+            "categoryId": 4,
+            "summary": "قاعة أعراس أنيقة ليومك المميز",
+            "location": {
+                "lat": 42.567,
+                "lng": -78.987
+            }
+        },
+        {
+            "id": 3,
+            "userId": 5,
+            "categoryId": 1,
+            "summary": "مخبوزات لذيذة لحفل الزفاف",
+            "location": {
+                "lat": 41.890,
+                "lng": -77.123
+            }
         }
-      }
     ],
-  
-    "Category": [
-      {
-        "id": 1,
-        "name": "Bakery",
-        "photo": "https://picsum.photos/600/400"
-      },
-      {
-        "id": 2,
-        "name": "Florist",
-        "photo": "https://picsum.photos/540/354"
-      },
-      {
-        "id": 3,
-        "name": "Photography",
-        "photo": "https://picsum.photos/530/354"
-      },
-      {
-        "id": 4,
-        "name": "Wedding Hall",
-        "photo": "https://picsum.photos/535/354"
-      }
+    "categories": [
+        {
+            "id": 1,
+            "name": "مخبوزات",
+            "photo": "https://picsum.photos/600/400"
+        },
+        {
+            "id": 2,
+            "name": "زهور",
+            "photo": "https://picsum.photos/540/354"
+        },
+        {
+            "id": 3,
+            "name": "تصوير",
+            "photo": "https://picsum.photos/530/354"
+        },
+        {
+            "id": 4,
+            "name": "قاعة أعراس",
+            "photo": "https://picsum.photos/535/354"
+        }
     ],
-  
-    "Review": [
-      {
-        "id": 1,
-        "userId": 1,
-        "serviceId": 1,
-        "rate": 5,
-        "message": "Delicious wedding cakes!",
-        "dateTime": "2023-02-14T09:15:27.245Z"
-      },
-      {
-        "id": 2,
-        "userId": 2,
-        "serviceId": 2,
-        "rate": 4,
-        "message": "Captured our special day beautifully",
-        "dateTime": "2023-02-15T12:47:11.135Z"
-      }
+    "reviews": [
+        {
+            "id": 1,
+            "userId": 1,
+            "serviceId": 1,
+            "rate": 5,
+            "message": "كيك لذيذ!",
+            "dateTime": "2023-02-14T09:15:27.245Z"
+        },
+        {
+            "id": 2,
+            "userId": 2,
+            "serviceId": 2,
+            "rate": 4,
+            "message": "التقط يومنا المميز بشكل جميل",
+            "dateTime": "2023-02-15T12:47:11.135Z"
+        }
     ],
-  
-    "Service": [
-      {
-        "id": 1,
-        "vendorId": 1,
-        "title": "Custom Wedding Cakes",
-        "description": "Exquisite wedding cakes for your big day",
-        "price": 150,
-        "street": "123 Wedding Avenue",
-        "district": "Ceremony City",
-        "governance": "Love State"
-      },
-      {
-        "id": 2,
-        "vendorId": 3,
-        "title": "Wedding Photography",
-        "description": "Capture the moments that matter",
-        "price": 1000,
-        "street": "789 Picture Perfect Street",
-        "district": "Snapshot Town",
-        "governance": "Photo State"
-      },
-      {
-        "id": 3,
-        "vendorId": 4,
-        "title": "Elegant Wedding Hall",
-        "description": "A picturesque venue for your special day",
-        "price": 5000,
-        "street": "456 Reception Road",
-        "district": "Eventville",
-        "governance": "Celebration State"
-      }
+    "services": [
+        {
+            "id": 1,
+            "vendorId": 1,
+            "title": "كيك زفاف مخصص",
+            "description": "كيك زفاف رائع ليومك الكبير",
+            "price": 150,
+            "street": "123 شارع الزفاف",
+            "district": "مدينة الحفلات",
+            "governance": "ولاية الحب"
+        },
+        {
+            "id": 2,
+            "vendorId": 3,
+            "title": "تصوير الزفاف",
+            "description": "التقط اللحظات المهمة",
+            "price": 1000,
+            "street": "789 شارع التصوير المثالي",
+            "district": "بلدة اللقطات",
+            "governance": "ولاية التصوير"
+        },
+        {
+            "id": 3,
+            "vendorId": 4,
+            "title": "قاعة أعراس أنيقة",
+            "description": "مكان رائع ليومك المميز",
+            "price": 5000,
+            "street": "456 طريق الاستقبال",
+            "district": "مدينة الأحداث",
+            "governance": "ولاية الاحتفالات"
+        }
     ],
-  
-    "ServiceAttachment": [
-      {
-        "id": 1,
-        "serviceId": 1,
-        "resource": "https://picsum.photos/535/360"
-      },
-      {
-        "id": 2,
-        "serviceId": 1,
-        "resource": "https://picsum.photos/534/360"
-      },
-      {
-        "id": 3,
-        "serviceId": 1,
-        "resource": "https://picsum.photos/532/360"
-      },
-      {
-        "id": 4,
-        "serviceId": 2,
-        "resource": "https://picsum.photos/536/360"
-      },
-      {
-        "id": 5,
-        "serviceId": 2,
-        "resource": "https://picsum.photos/536/361"
-      }
+    "serviceAttachments": [
+        {
+            "id": 1,
+            "serviceId": 1,
+            "resource": "https://picsum.photos/535/360"
+        },
+        {
+            "id": 2,
+            "serviceId": 1,
+            "resource": "https://picsum.photos/534/360"
+        },
+        {
+            "id": 3,
+            "serviceId": 1,
+            "resource": "https://picsum.photos/532/360"
+        },
+        {
+            "id": 4,
+            "serviceId": 2,
+            "resource": "https://picsum.photos/536/360"
+        },
+        {
+            "id": 5,
+            "serviceId": 2,
+            "resource": "https://picsum.photos/536/361"
+        }
     ],
-  
-    "Discount": [
-      {
-        "id": 1,
-        "serviceId": 1,
-        "code": "WEDCAKE10",
-        "discount": 10
-      },
-      {
-        "id": 2,
-        "serviceId": 2,
-        "code": "WEDPHOTO20",
-        "discount": 20
-      }
+    "discounts": [
+        {
+            "id": 1,
+            "serviceId": 1,
+            "code": "WEDCAKE10",
+            "discount": 10
+        },
+        {
+            "id": 2,
+            "serviceId": 2,
+            "code": "WEDPHOTO20",
+            "discount": 20
+        }
     ],
-  
-    "BookingDetails": [
-      {
-        "id": 1,
-        "bookingId": 1,
-        "serviceId": 1,
-        "code": "WEDCAKE10",
-        "status": "confirmed",
-        "paymentStatus": "paid"
-      },
-      {
-        "id": 2,
-        "bookingId": 2,
-        "serviceId": 2,
-        "code": "WEDPHOTO20",
-        "status": "pending",
-        "paymentStatus": "unpaid"
-      }
+    "bookingDetails": [
+        {
+            "id": 1,
+            "bookingId": 1,
+            "serviceId": 1,
+            "code": "WEDCAKE10",
+            "status": "confirmed",
+            "paymentStatus": "paid"
+        },
+        {
+            "id": 2,
+            "bookingId": 2,
+            "serviceId": 2,
+            "code": "WEDPHOTO20",
+            "status": "pending",
+            "paymentStatus": "unpaid"
+        }
     ],
-  
-    "Booking": [
-      {
-        "id": 1,
-        "userId": 1,
-        "totalPrice": 1150,
-        "date": "2023-06-14",
-        "location": "123 Wedding Venue St"
-      },
-      {
-        "id": 2,
-        "userId": 2,
-        "totalPrice": 6000,
-        "date": "2023-09-30",
-        "location": "789 Beautiful Memories Blvd"
-      }
+    "bookings": [
+        {
+            "id": 1,
+            "userId": 1,
+            "totalPrice": 1150,
+            "date": "2023-06-14",
+            "location": "123 شارع مكان الزفاف"
+        },
+        {
+            "id": 2,
+            "userId": 2,
+            "totalPrice": 6000,
+            "date": "2023-09-30",
+            "location": "789 شارع الذكريات الجميلة"
+        }
     ],
-  
-    "Post": [
-      {
-        "id": 1,
-        "vendorId": 1,
-        "title": "New Wedding Cake Flavors!",
-        "description": "Try our latest wedding cake flavors for your special day!",
-        "date": "2023-04-10",
-        "serviceId": 1
-      },
-      {
-        "id": 2,
-        "vendorId": 3,
-        "title": "Capturing Love Stories",
-        "description": "View our portfolio of love stories captured through photography",
-        "date": "2023-05-20",
-        "serviceId": 2
-      }
+    "posts": [
+        {
+            "id": 1,
+            "vendorId": 1,
+            "title": "نكهات جديدة من كيك الزفاف!",
+            "description": "جرب أحدث نكهات كيك الزفاف ليومك المميز!",
+            "date": "2023-04-10",
+            "serviceId": 1
+        },
+        {
+            "id": 2,
+            "vendorId": 3,
+            "title": "التقاط قصص الحب",
+            "description": "شاهد محفظتنا من قصص الحب التي تم التقاطها من خلال التصوير",
+            "date": "2023-05-20",
+            "serviceId": 2
+        }
     ],
-  
-    "PostAttachment": [
-      {
-        "id": 1,
-        "postId": 1,
-        "attachmentUrl": "https://picsum.photos/536/354"
-      },
-      {
-        "id": 2,
-        "postId": 1,
-        "attachmentUrl": "https://picsum.photos/535/354"
-      },
-      {
-        "id": 3,
-        "postId": 2,
-        "attachmentUrl": "https://picsum.photos/536/355"
-      }
+    "postAttachments": [
+        {
+            "id": 1,
+            "postId": 1,
+            "attachmentUrl": "https://picsum.photos/536/354"
+        },
+        {
+            "id": 2,
+            "postId": 1,
+            "attachmentUrl": "https://picsum.photos/535/354"
+        },
+        {
+            "id": 3,
+            "postId": 2,
+            "attachmentUrl": "https://picsum.photos/536/355"
+        }
     ],
-  
-    "React": [
-      {
-        "id": 1,
-        "userId": 1,
-        "postId": 1,
-        "value": 1,
-        "date": "2023-04-10T14:25:11Z"
-      },
-      {
-        "id": 2,
-        "userId": 2,
-        "postId": 2,
-        "value": 1,
-        "date": "2023-05-20T08:15:49Z"
-      }
+    "reacts": [
+        {
+            "id": 1,
+            "userId": 1,
+            "postId": 1,
+            "value": 1,
+            "date": "2023-04-10T14:25:11Z"
+        },
+        {
+            "id": 2,
+            "userId": 2,
+            "postId": 2,
+            "value": 1,
+            "date": "2023-05-20T08:15:49Z"
+        }
     ],
-  
-    "Follow": [
-      {
-        "id": 1,
-        "userId": 1,
-        "vendorId": 3,
-        "date": "2023-04-30"
-      },
-      {
-        "id": 2,
-        "userId": 2,
-        "vendorId": 1,
-        "date": "2023-06-05"
-      }
+    "follows": [
+        {
+            "id": 1,
+            "userId": 1,
+            "vendorId": 3,
+            "date": "2023-04-30"
+        },
+        {
+            "id": 2,
+            "userId": 2,
+            "vendorId": 1,
+            "date": "2023-06-05"
+        }
     ],
-  
-    "Comment": [
-      {
-        "id": 1,
-        "userId": 1,
-        "postId": 1,
-        "text": "Excited to try the new cake flavors!",
-        "date": "2023-04-10T15:20:11Z"
-      },
-      {
-        "id": 2,
-        "userId": 2,
-        "postId": 2,
-        "text": "Your photography is amazing!",
-        "date": "2023-05-20T09:25:33Z"
-      }
+    "comments": [
+        {
+            "id": 1,
+            "userId": 1,
+            "postId": 1,
+            "text": "متحمس لتجربة نكهات الكيك الجديدة!",
+            "date": "2023-04-10T15:20:11Z"
+        },
+        {
+            "id": 2,
+            "userId": 2,
+            "postId": 2,
+            "text": "تصويرك رائع!",
+            "date": "2023-05-20T09:25:33Z"
+        }
     ],
-  
-    "WeddingInvitation": [
-      {
-        "id": 1,
-        "userId": 1,
-        "description": "Join us for the wedding celebration of John and Jane",
-        "brideName": "Jane",
-        "groomName": "John",
-        "date": "2023-06-14"
-      }
+    "weddingInvitations": [
+        {
+            "id": 1,
+            "userId": 1,
+            "description": "انضم إلينا لالاحتفال بزفاف علي وفاطمة",
+            "brideName": "فاطمة",
+            "groomName": "علي",
+            "date": "2023-06-14"
+        }
     ],
-  
-    "CheckListItem": [
-      {
-        "id": 1,
-        "checklistId": 1,
-        "text": "Book wedding venue",
-        "status": false
-      },
-      {
-        "id": 2,
-        "checklistId": 1,
-        "text": "Hire a photographer",
-        "status": false
-      }
+    "checklistItems": [
+        {
+            "id": 1,
+            "checklistId": 1,
+            "text": "احجز مكان الزفاف",
+            "status": false
+        },
+        {
+            "id": 2,
+            "checklistId": 1,
+            "text": "استأجر مصورًا",
+            "status": false
+        }
     ],
-  
-    "CheckList": [
-      {
-        "id": 1,
-        "userId": 1,
-        "weddingDate": "2023-06-14"
-      }
+    "checklists": [
+        {
+            "id": 1,
+            "userId": 1,
+            "weddingDate": "2023-06-14"
+        }
     ]
-  }
-  
+}
