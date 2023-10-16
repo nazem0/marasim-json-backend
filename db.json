@@ -60,7 +60,7 @@
         {
             "id": 1,
             "userId": 3,
-            "categoryId": 3,
+            "categoryId": 1,
             "summary": "خدمات تصوير أعراس احترافية",
             "location": {
                 "lat": 43.789,
