@@ -1,24 +1,23 @@
 var map;
 async function initMap() {
     // The location of Uluru
-    const position = { lat: -25.344, lng: 131.031 };
+    const position = { lat: 24.0923346, lng: 32.9001062 };
     // Request needed libraries.
     //@ts-ignore
     const { Map, InfoWindow } = await google.maps.importLibrary("maps");
     const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
-    // The map, centered at Uluru
     map = new Map(document.getElementById("map"), {
         zoom: 15,
         center: position,
-        mapId: "DEMO_MAP_ID",
+        mapId: "Position",
     });
 
     // The marker, positioned at Uluru
     const marker = new AdvancedMarkerElement({
         map: map,
         position: position,
-        title: "Uluru",
+        title: "Position",
         gmpDraggable: true,
 
     });
@@ -36,6 +35,7 @@ async function initMap() {
 
 var CROSproxyURL = 'https://corsproxy.io/?';
 var args = '';
+var language = "ar";
 if (typeof language != 'undefined') args += '&language=' + language;
 
 var bypass = function (googleAPIcomponentJS, googleAPIcomponentURL) {
